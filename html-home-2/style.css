@@ -29,3 +29,8 @@ th {
 .footer {
     clear: both;
 }
+
+.inline li {
+    display: inline-block;
+    margin-left: 0;
+}
