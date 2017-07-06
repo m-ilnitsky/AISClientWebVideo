@@ -1,0 +1,31 @@
+table {
+    border: 5px solid skyblue;
+    border-collapse: collapse;
+    background-color: white;
+    font-size: 32px;
+    margin-left: 30px;
+    color: blue;
+}
+
+td,
+th {
+    border: 5px solid skyblue;
+    border-collapse: collapse;
+    font-size: 32px;
+    text-align: center;
+    width: 60px;
+}
+
+th {
+    font-weight: bold;
+    background-color: blue;
+    color: white;
+}
+
+.float {
+    float: left;
+}
+
+.footer {
+    clear: both;
+}
