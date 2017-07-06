@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web.HTML: Домашка №1</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Web.HTML: Домашка №1</h1>
+        <form action="index.html" method="post">
+            <label>
+                Ваше имя <input type="text" name="clientName">
+            </label>
+            <label>
+                Пароль <input type="password" name="clientPassword">
+            </label>
+            <br><br>
+            <label>
+                <input type="checkbox" name="RFCitizen"> гражданин РФ
+            </label>
+            <br><br>
+            <label>
+                Эссе о себе:<br>
+                <textarea rows="5" cols="70">Какой же я хороший...</textarea>
+            </label>
+            <br><br>
+            <label>
+                <input type="radio" name="party" value="EdRo"> Единая Россия
+            </label>
+            <label>
+                <input type="radio" name="party" value="SpRo"> Справедливая Россия
+            </label>
+            <label>
+                <input type="radio" name="party" value="KPRF"> КПРФ
+            </label>
+            <label>
+                <input type="radio" name="party" value="LDPR"> ЛДПР
+            </label>
+            <label>
+                <input type="radio" name="party" value="none" checked> беспартийный
+            </label>
+            <br><br>
+            Регион проживания:
+            <br>
+            <select name="region">
+                <option value="nsk">Новосибирск</option>
+                <option value="msk">Москва</option>
+                <option value="spb">Санкт-Петербург</option>
+                <option value="ekb">Екатеринбург</option>
+            </select>
+            <br><br>
+            Пол:
+            <br>
+            <select name="sex" multiple size="4">
+                <option value="none" selected>неопределённый</option>
+                <option value="man">мужской</option>
+                <option value="woman">женский</option>
+                <option value="nontraditional">нетрадиционный</option>
+                <option value="washed">мытый</option>
+                <option value="oak">дубовый</option>
+                <option value="parquet">паркетный</option>
+            </select>
+            <br>
+            <br>
+            <br>
+            <input type="submit" value="Была не была!">
+        </form>
+    </body>
+</html>
