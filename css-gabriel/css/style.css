@@ -1,0 +1,50 @@
+body {
+    font-family: sans-serif;
+}
+
+.page-header ul {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    background-color: #fed517;
+    font-size: 19px;
+}
+
+.page-header li {
+    display: table-cell;
+    width: 14%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.page-header div {
+    display: block;
+    border-right: 2px solid #cbab16;
+}
+
+.page-header a {
+    text-decoration: none;
+    color: #846f0d;
+}
+
+.page-header a:hover {
+    text-decoration: underline;
+}
+
+.page-header sub {
+    bottom: 0;
+}
+
+.page-header .disabled a {
+    text-decoration: none;
+    cursor: default;
+    opacity: 0.3;
+}
+
+.page-header .active a {
+    text-decoration: underline;
+    color: #d50307;
+}
