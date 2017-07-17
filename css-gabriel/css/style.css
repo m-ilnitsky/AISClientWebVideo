@@ -44,18 +44,22 @@ body {
     bottom: 0;
 }
 
-.page-header .disabled a {
+.page-header__item--disabled a {
     text-decoration: none;
     cursor: default;
     opacity: 0.3;
 }
 
-.page-header .active a {
+.page-header__item--active a {
     text-decoration: underline;
     color: #d50307;
 }
 
 /* Page Header End */
+
+.gradient-page {
+    background: linear-gradient(to bottom, #fdfdfd,  #dcdcde);
+}
 
 table {
     width: 100%;
@@ -65,8 +69,7 @@ table {
 /* Validator Table Begin */
 
 .validator-table-wrapper {
-    overflow: auto;
-    max-height: 260px;
+    padding: 0 8px;
 }
 
 .validator-table {
@@ -74,50 +77,216 @@ table {
     color: #6d6d6d;
 }
 
-.validator-table th,
 .validator-table td {
     padding: 10px 5px;
 }
 
-.validator-table thead th {
+.validator-table__head td {
     border-bottom: 1px solid #dbdcdc;
 }
 
-.validator-table .validator-col {
+.validator-table__body {
+    overflow-y: scroll;
+    max-height: 220px;
+}
+
+.validator-table__validator-col {
     width: 90px;
     padding-left: 20px;
     text-align: left;
 }
 
-.validator-table .letter-col {
+.validator-table__letter-col {
     width: 50px;
     text-align: center;
 }
 
-.validator-table .address-col {
+.validator-table__address-col {
+    width: 280px;
     text-align: left;
 }
 
-.validator-table .rest-col {
+.validator-table__rest-col {
     width: 80px;
     text-align: center;
 }
 
-.validator-table td.rest-col {
+.validator-table__body .validator-table__rest-col {
     font-size: 16px;
     font-weight: bold;
 }
 
-.validator-table td.request-col {
+.validator-table__request-col {
+    width: 240px;
+    text-align: center;
+}
+
+.validator-table__body .validator-table__request-col {
     text-align: right;
 }
 
-.validator-table .comment-col {
+.validator-table__comment-col {
     text-align: left;
 }
 
-.validator-table .comment {
+.validator-table__comment {
     width: 100%;
 }
 
 /* Validator Table End */
+
+.clearfix::after {
+    content: ' ';
+    display: table;
+    clear: both;
+}
+
+/* Validator Button Panel Begin */
+
+.validator-button-panel {
+    padding: 18px;
+}
+
+.validator-button-panel__left-buttons {
+    float: left;
+}
+
+.validator-button-panel__right-buttons {
+    float: right;
+}
+
+.validator-button-panel__button,
+.validator-button-panel__button--white {
+    width: 172px;
+    height: 42px;
+    border: 1px solid #628428;
+    background-color: #88b436;
+    background: linear-gradient(to bottom right, #9ec453,  #7ca930);
+    color: white;
+    margin: 6px;
+    cursor: pointer;
+    outline: none;
+}
+.validator-button-panel__button:hover {
+    border-color: #66882c;
+    background-color: #8cb83a;
+    background: linear-gradient(to bottom right, #aed463,  #8cb940);
+}
+
+.validator-button-panel__button--white {
+    border: 1px solid #afb0b0;
+    background-color: #efefef;
+    background: linear-gradient(to bottom right, #f3f3f3,  #cacaca);
+    color: #9d9d9d;
+}
+.validator-button-panel__button--white:hover {
+    border-color: #b3b4b4;
+    background-color: #f3f3f3;
+    background: linear-gradient(to bottom right, #ffffff,  #dadada);
+}
+
+/* Validator Button Panel End */
+
+/* Previous Requests Table Header Begin */
+
+.request-table-header {
+    margin: 0;
+    margin-top: 20px;
+    line-height: 40px;
+    color: #777777;
+}
+
+.request-table-header__left-part {
+    float: left;
+    margin-left: 24px;
+    font-weight: bold;
+}
+
+.request-table-header__right-part {
+    float: right;
+}
+
+.request-table-header__right-part > * {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 12px;
+}
+
+.request-table-header__refresh-icon {
+    width: 40px;
+    margin-right: 30px;
+    margin-left: 10px;
+}
+
+/* Previous Requests Table Header End */
+
+/* Request Table Begin */
+
+.request-table {
+    line-height: 30px;
+    font-size: 12px;
+    text-align: left;
+}
+
+.request-table th {
+    font-weight: bold;
+    background-color: #ffd308;
+    color: #6e5d0b;
+    border-top: 1px solid #d3d0c0;
+    border-bottom: 1px solid #b0c3a8;
+    border-left: 1px dotted #c5a502;
+}
+
+.request-table th:first-of-type {
+    border-left: none;
+}
+
+.request-table__body {
+    overflow-y: scroll;
+    max-height: 130px;
+}
+
+.request-table td {
+    color: #656565;
+    border: 1px dotted white;
+    border-right-color: #bfc0c0;
+    border-bottom-color: #bfc0c0;
+}
+
+.request-table__row--selected td {
+    background-color: #b2d1f6;
+    color: #4e5c6c;
+    position: relative;
+}
+
+.request-table__delete-icon {
+    position: absolute;
+    top: 6px;
+    right: 30px;
+}
+
+.request-table tr:first-of-type td {
+    border-top: none;
+}
+
+.request-table__date-column {
+    padding-left: 30px;
+    width: 150px;
+}
+
+.request-table__request-number-column,
+.request-table__status-column {
+    padding-left: 10px;
+    width: 130px;
+}
+
+.request-table__system-column {
+    padding-left: 10px;
+    width: 160px;
+}
+
+.request-table__number-column {
+    padding-left: 10px;
+}
+
+/* Request Table End */
