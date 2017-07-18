@@ -1,185 +1,198 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Gabriel</title>
-        <link rel="stylesheet" href="css/normalize.css" type="text/css">
-        <link rel="stylesheet" href="css/style.css" type="text/css">
-        <meta charset="utf-8">
-    </head>
-    <body>
-        <div class="page-header">
-            <ul>
-                <li class="page-header__item--active"><div><a href="#">Gabriel</a></div></li>
-                <li><div><a href="#">Gabriel <sub>блоки</sub></a></div></li>
-                <li><div><a href="#">Сирена</a></div></li>
-                <li><div><a href="#">Amadeus</a></div></li>
-                <li class="page-header__item--disabled"><div><a href="#">Sabre</a></div></li>
-                <li class="page-header__item--disabled"><div><a href="#">Galileo</a></div></li>
-                <li><div><a href="#">Бумажные</a></div></li>
-            </ul>
-        </div>
-      <div class="gradient-page">
-        <div class="validator-table-wrapper">
-            <table class="validator-table validator-table__head">
-                    <tr>
-                        <td class="validator-table__validator-col">Валидатор</td>
-                        <td class="validator-table__letter-col">Буква</td>
-                        <td class="validator-table__address-col">Адрес</td>
-                        <td class="validator-table__rest-col">Остаток ET</td>
-                        <td class="validator-table__request-col">Сколько необходимо ещё ET</td>
-                        <td class="validator-table__comment-col">Комментарий</td>
-                    </tr>
-            </table>
-            <div class="validator-table__body">
-                <table class="validator-table">
-                    <tr>
-                        <td class="validator-table__validator-col">421-7176-1</td>
-                        <td class="validator-table__letter-col">A</td>
-                        <td class="validator-table__address-col">РФ, г.Москва, ул.Усичева, д.22, корп.1</td>
-                        <td class="validator-table__rest-col">10</td>
-                        <td class="validator-table__request-col">200</td>
-                        <td class="validator-table__comment-col">
-                            <input type="text" class="validator-table__comment" placeholder="Какой-то комментарий">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="validator-table__validator-col">421-7136-1</td>
-                        <td class="validator-table__letter-col">A</td>
-                        <td class="validator-table__address-col">Moldova, Chisinau, str.Alexandru cel Bun, 98</td>
-                        <td class="validator-table__rest-col">35</td>
-                        <td class="validator-table__request-col">100</td>
-                        <td class="validator-table__comment-col">
-                            <input type="text" class="validator-table__comment" placeholder="Какой-то комментарий">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="validator-table__validator-col">421-7176-1</td>
-                        <td class="validator-table__letter-col">A</td>
-                        <td class="validator-table__address-col">РФ, г.Москва, ул.Усичева, д.22, корп.1</td>
-                        <td class="validator-table__rest-col">10</td>
-                        <td class="validator-table__request-col">200</td>
-                        <td class="validator-table__comment-col">
-                            <input type="text" class="validator-table__comment" placeholder="Какой-то комментарий">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="validator-table__validator-col">421-7176-1</td>
-                        <td class="validator-table__letter-col">A</td>
-                        <td class="validator-table__address-col">РФ, г.Москва, ул.Усичева, д.22, корп.1</td>
-                        <td class="validator-table__rest-col">10</td>
-                        <td class="validator-table__request-col">200</td>
-                        <td class="validator-table__comment-col">
-                            <input type="text" class="validator-table__comment" placeholder="Какой-то комментарий">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="validator-table__validator-col">421-7176-1</td>
-                        <td class="validator-table__letter-col">A</td>
-                        <td class="validator-table__address-col">РФ, г.Москва, ул.Усичева, д.22, корп.1</td>
-                        <td class="validator-table__rest-col">10</td>
-                        <td class="validator-table__request-col">200</td>
-                        <td class="validator-table__comment-col">
-                            <input type="text" class="validator-table__comment" placeholder="Какой-то комментарий">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="validator-table__validator-col">421-7176-1</td>
-                        <td class="validator-table__letter-col">A</td>
-                        <td class="validator-table__address-col">РФ, г.Москва, ул.Усичева, д.22, корп.1</td>
-                        <td class="validator-table__rest-col">10</td>
-                        <td class="validator-table__request-col">200</td>
-                        <td class="validator-table__comment-col">
-                            <input type="text" class="validator-table__comment" placeholder="Какой-то комментарий">
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="validator-button-panel clearfix">
-            <div class="validator-button-panel__left-buttons">
-                <button class="validator-button-panel__button">Архив заявок</button>
-            </div>
-            <div class="validator-button-panel__right-buttons">
-                <button class="validator-button-panel__button">Отменить</button>
-                <button class="validator-button-panel__button--white">Отправить</button>
-            </div>
-        </div>
-        <div class="request-table-header clearfix">
-            <div class="request-table-header__left-part">
-                Предыдущие заявки
-            </div>
-            <div class="request-table-header__right-part">
-                <div>
-                    Обновлено 13.11.2012, 15:45
-                </div>
-                <img class="request-table-header__refresh-icon" src="images/refresh.png">
-            </div>
-        </div>
-        <div class="request-table">
-            <table>
-                <thead>
-                    <tr>
-                        <th class="request-table__date-column">Дата, время заявки</th>
-                        <th class="request-table__request-number-column">Номер заявки</th>
-                        <th class="request-table__status-column">Статус</th>
-                        <th class="request-table__system-column">Система бронирования</th>
-                        <th class="request-table__number-column">Заказано</th>
-                    </tr>
-                </thead>
-            </table>
-        <div>
-        <div class="request-table request-table__body">
-            <table>
-                <tbody>
-                    <tr class="request-table__row--selected">
-                        <td class="request-table__date-column">21.12.2012, 08:04</td>
-                        <td class="request-table__request-number-column">32515192E75B</td>
-                        <td class="request-table__status-column">На рассмотрении</td>
-                        <td class="request-table__system-column">Gabriel</td>
-                        <td class="request-table__number-column">
-                            400
-                            <div class="request-table__delete-icon">
-                                <img src="images/delete.png">
-                            </div>
-                        </td>
-                    </tr>
-                    <tr class="request-table__row--selected">
-                        <td class="request-table__date-column">18.12.2012, 10:04</td>
-                        <td class="request-table__request-number-column">32514122E75B</td>
-                        <td class="request-table__status-column">На рассмотрении</td>
-                        <td class="request-table__system-column">Amadeus</td>
-                        <td class="request-table__number-column">
-                            350
-                            <div class="request-table__delete-icon">
-                                <img src="images/delete.png">
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="request-table__date-column">13.12.2012, 08:04</td>
-                        <td class="request-table__request-number-column">32512292E75B</td>
-                        <td class="request-table__status-column">Рассмотрена</td>
-                        <td class="request-table__system-column">Gabriel</td>
-                        <td class="request-table__number-column">200</td>
-                    </tr>
-                    <tr>
-                        <td class="request-table__date-column">13.12.2012, 08:04</td>
-                        <td class="request-table__request-number-column">32512192E75B</td>
-                        <td class="request-table__status-column">Рассмотрена</td>
-                        <td class="request-table__system-column">Gabriel</td>
-                        <td class="request-table__number-column">50</td>
-                    </tr>
-                    <tr>
-                        <td class="request-table__date-column">11.12.2012, 08:04</td>
-                        <td class="request-table__request-number-column">32502192E75B</td>
-                        <td class="request-table__status-column">Рассмотрена</td>
-                        <td class="request-table__system-column">Gabriel</td>
-                        <td class="request-table__number-column">150</td>
-                    </tr>
-                </tbody>
+<head>
+    <title>Gabriel</title>
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <meta charset="utf-8">
+</head>
+<body>
+<div class="page-header">
+    <ul>
+        <li class="page-header__item--active">
+            <div><a href="#">Gabriel</a></div>
+        </li>
+        <li>
+            <div><a href="#">Gabriel <sub>блоки</sub></a></div>
+        </li>
+        <li>
+            <div><a href="#">Сирена</a></div>
+        </li>
+        <li>
+            <div><a href="#">Amadeus</a></div>
+        </li>
+        <li class="page-header__item--disabled">
+            <div><a href="#">Sabre</a></div>
+        </li>
+        <li class="page-header__item--disabled">
+            <div><a href="#">Galileo</a></div>
+        </li>
+        <li>
+            <div><a href="#">Бумажные</a></div>
+        </li>
+    </ul>
+</div>
+<div class="gradient-page">
+    <div class="validator-table-wrapper">
+        <table class="validator-table validator-table__head">
+            <tr>
+                <td class="validator-table__validator-col">Валидатор</td>
+                <td class="validator-table__letter-col">Буква</td>
+                <td class="validator-table__address-col">Адрес</td>
+                <td class="validator-table__rest-col">Остаток ET</td>
+                <td class="validator-table__request-col">Сколько необходимо ещё ET</td>
+                <td class="validator-table__comment-col">Комментарий</td>
+            </tr>
+        </table>
+        <div class="validator-table__body">
+            <table class="validator-table">
+                <tr>
+                    <td class="validator-table__validator-col">421-7176-1</td>
+                    <td class="validator-table__letter-col">A</td>
+                    <td class="validator-table__address-col">РФ, г.Москва, ул.Усичева, д.22, корп.1</td>
+                    <td class="validator-table__rest-col">10</td>
+                    <td class="validator-table__request-col">200</td>
+                    <td class="validator-table__comment-col">
+                        <input type="text" class="validator-table__comment" placeholder="Какой-то комментарий">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="validator-table__validator-col">421-7136-1</td>
+                    <td class="validator-table__letter-col">A</td>
+                    <td class="validator-table__address-col">Moldova, Chisinau, str.Alexandru cel Bun, 98</td>
+                    <td class="validator-table__rest-col">35</td>
+                    <td class="validator-table__request-col">100</td>
+                    <td class="validator-table__comment-col">
+                        <input type="text" class="validator-table__comment" placeholder="Какой-то комментарий">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="validator-table__validator-col">421-7176-1</td>
+                    <td class="validator-table__letter-col">A</td>
+                    <td class="validator-table__address-col">РФ, г.Москва, ул.Усичева, д.22, корп.1</td>
+                    <td class="validator-table__rest-col">10</td>
+                    <td class="validator-table__request-col">200</td>
+                    <td class="validator-table__comment-col">
+                        <input type="text" class="validator-table__comment" placeholder="Какой-то комментарий">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="validator-table__validator-col">421-7176-1</td>
+                    <td class="validator-table__letter-col">A</td>
+                    <td class="validator-table__address-col">РФ, г.Москва, ул.Усичева, д.22, корп.1</td>
+                    <td class="validator-table__rest-col">10</td>
+                    <td class="validator-table__request-col">200</td>
+                    <td class="validator-table__comment-col">
+                        <input type="text" class="validator-table__comment" placeholder="Какой-то комментарий">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="validator-table__validator-col">421-7176-1</td>
+                    <td class="validator-table__letter-col">A</td>
+                    <td class="validator-table__address-col">РФ, г.Москва, ул.Усичева, д.22, корп.1</td>
+                    <td class="validator-table__rest-col">10</td>
+                    <td class="validator-table__request-col">200</td>
+                    <td class="validator-table__comment-col">
+                        <input type="text" class="validator-table__comment" placeholder="Какой-то комментарий">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="validator-table__validator-col">421-7176-1</td>
+                    <td class="validator-table__letter-col">A</td>
+                    <td class="validator-table__address-col">РФ, г.Москва, ул.Усичева, д.22, корп.1</td>
+                    <td class="validator-table__rest-col">10</td>
+                    <td class="validator-table__request-col">200</td>
+                    <td class="validator-table__comment-col">
+                        <input type="text" class="validator-table__comment" placeholder="Какой-то комментарий">
+                    </td>
+                </tr>
             </table>
         </div>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <div>
-    </body>
+    </div>
+    <div class="validator-button-panel clearfix">
+        <div class="validator-button-panel__left-buttons">
+            <button class="validator-button-panel__button">Архив заявок</button>
+        </div>
+        <div class="validator-button-panel__right-buttons">
+            <button class="validator-button-panel__button">Отменить</button>
+            <button class="validator-button-panel__button--white">Отправить</button>
+        </div>
+    </div>
+    <div class="request-table-header clearfix">
+        <div class="request-table-header__left-part">
+            Предыдущие заявки
+        </div>
+        <div class="request-table-header__right-part">
+            <div>
+                Обновлено 13.11.2012, 15:45
+            </div>
+            <img class="request-table-header__refresh-icon" src="images/refresh.png">
+        </div>
+    </div>
+    <div class="request-table">
+        <table>
+            <thead>
+            <tr>
+                <th class="request-table__date-column">Дата, время заявки</th>
+                <th class="request-table__request-number-column">Номер заявки</th>
+                <th class="request-table__status-column">Статус</th>
+                <th class="request-table__system-column">Система бронирования</th>
+                <th class="request-table__number-column">Заказано</th>
+            </tr>
+            </thead>
+        </table>
+    </div>
+    <div class="request-table request-table__body">
+        <table>
+            <tbody>
+            <tr class="request-table__row--selected">
+                <td class="request-table__date-column">21.12.2012, 08:04</td>
+                <td class="request-table__request-number-column">32515192E75B</td>
+                <td class="request-table__status-column">На рассмотрении</td>
+                <td class="request-table__system-column">Gabriel</td>
+                <td class="request-table__number-column">
+                    400
+                    <div class="request-table__delete-icon">
+                        <img src="images/delete.png" alt="Удалить" title="Удалить"/>
+                    </div>
+                </td>
+            </tr>
+            <tr class="request-table__row--selected">
+                <td class="request-table__date-column">18.12.2012, 10:04</td>
+                <td class="request-table__request-number-column">32514122E75B</td>
+                <td class="request-table__status-column">На рассмотрении</td>
+                <td class="request-table__system-column">Amadeus</td>
+                <td class="request-table__number-column">
+                    350
+                    <div class="request-table__delete-icon">
+                        <img src="images/delete.png" alt="Удалить" title="Удалить"/>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="request-table__date-column">13.12.2012, 08:04</td>
+                <td class="request-table__request-number-column">32512292E75B</td>
+                <td class="request-table__status-column">Рассмотрена</td>
+                <td class="request-table__system-column">Gabriel</td>
+                <td class="request-table__number-column">200</td>
+            </tr>
+            <tr>
+                <td class="request-table__date-column">13.12.2012, 08:04</td>
+                <td class="request-table__request-number-column">32512192E75B</td>
+                <td class="request-table__status-column">Рассмотрена</td>
+                <td class="request-table__system-column">Gabriel</td>
+                <td class="request-table__number-column">50</td>
+            </tr>
+            <tr>
+                <td class="request-table__date-column">11.12.2012, 08:04</td>
+                <td class="request-table__request-number-column">32502192E75B</td>
+                <td class="request-table__status-column">Рассмотрена</td>
+                <td class="request-table__system-column">Gabriel</td>
+                <td class="request-table__number-column">150</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
 </html>

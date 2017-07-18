@@ -4,6 +4,22 @@
 
 body {
     font-family: sans-serif;
+    background-color: #dcdcde;
+}
+
+.gradient-page {
+    background: linear-gradient(to bottom, #fdfdfd,  #dcdcde);
+}
+
+.clearfix::after {
+    content: ' ';
+    display: table;
+    clear: both;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
 }
 
 /* Page Header Begin */
@@ -31,6 +47,10 @@ body {
     border-right: 2px solid #cbab16;
 }
 
+.page-header li:last-of-type div {
+    border-right: none;
+}
+
 .page-header a {
     text-decoration: none;
     color: #846f0d;
@@ -50,21 +70,16 @@ body {
     opacity: 0.3;
 }
 
+.page-header__item--disabled a:hover {
+    text-decoration: none;
+}
+
 .page-header__item--active a {
     text-decoration: underline;
     color: #d50307;
 }
 
 /* Page Header End */
-
-.gradient-page {
-    background: linear-gradient(to bottom, #fdfdfd,  #dcdcde);
-}
-
-table {
-    width: 100%;
-    border-spacing: 0;
-}
 
 /* Validator Table Begin */
 
@@ -86,7 +101,7 @@ table {
 }
 
 .validator-table__body {
-    overflow-y: scroll;
+    overflow-y: auto;
     max-height: 220px;
 }
 
@@ -131,15 +146,18 @@ table {
 
 .validator-table__comment {
     width: 100%;
+    height: 18px;
+    outline: none;
+    border: 1px solid #6d6d6d;
+    padding-left: 8px;
+}
+
+.validator-table__comment:hover {
+    outline: none;
+    border: 1px solid #6d6d6d;
 }
 
 /* Validator Table End */
-
-.clearfix::after {
-    content: ' ';
-    display: table;
-    clear: both;
-}
 
 /* Validator Button Panel Begin */
 
@@ -242,7 +260,7 @@ table {
 }
 
 .request-table__body {
-    overflow-y: scroll;
+    overflow-y: auto;
     max-height: 130px;
 }
 
@@ -263,6 +281,7 @@ table {
     position: absolute;
     top: 6px;
     right: 30px;
+    cursor: pointer;
 }
 
 .request-table tr:first-of-type td {
